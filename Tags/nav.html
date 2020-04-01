@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+
+    <style>
+        body{
+            margin: 0;
+        }
+        header, footer{
+            height: 10vh;
+            background-color: #CCC;
+        }
+        section{
+            display: flex;
+            flex-direction: row;
+        }
+        main{
+            height: 80vh;
+            background-color: #999;
+            flex: 1;
+        }
+        aside{
+            height: 80vh;
+            background-color: gold;
+            width: 15vw;
+        }
+        p{
+            font-size: 13px;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            vertical-align: center;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!--agrupa links de navegação-->
+        <nav>
+            <a href="#">home</a>
+            <a href="#">conteudo</a>
+            <a href="#">contato</a>
+        </nav>
+    </header>
+    <section>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">conteudo</a></li>
+                    <li><a href="#">contato</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main></main>
+        <aside>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aliquam blanditiis provident nostrum excepturi quo cumque numquam, neque esse laudantium vel nisi tempora odit deserunt tempore voluptate nihil, commodi iste!</p>
+        </aside>
+    </section>
+    <footer>
+        <nav>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">contato</a>
+        </nav>
+    </footer>
+</body>
+</html>

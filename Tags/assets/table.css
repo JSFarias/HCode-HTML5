@@ -1,0 +1,34 @@
+table {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: chocolate 2px solid;
+  }
+  tbody tr:nth-of-type(odd) {
+    background-color: #E1E1E1;
+  }
+  td, th {
+    padding: 1em;
+    border: chocolate 1px dashed;  
+    transition: background-color 0.1s;  
+  }
+  td:hover{
+    background-color: rgb(255, 179, 179);
+  }
+  
+  td.real {
+    text-align: right;
+  }
+  td.real:before {
+    content: 'R$';
+  }
+  
+  tfoot tr {
+    background-color: #333;
+    color: #fff;
+  }
+  table caption{
+    text-align: left;
+    font-weight: bold;
+    color: crimson;
+  }
