@@ -8,8 +8,16 @@
 <body>
     <!--abreviação de formulário-->
     <!--definir um formulário, um grupo de campos de entrada de dados dos usuários-->
+    <!--agrupa todos os campos de um mesmo formulário, seja cadastro, login, reserva e etc,
+    mas é possível ter campos fora do form e relacionar a ele-->
 
-    
+    <!--attributo accept-charset - define o encode usado ao enviar o form-->
+
+    <form action="/send" method="post" target="_blank" enctype="multipart/form-data">
+        <input type="text" name="username">        
+        <input type="password" name="password">     
+        <input type="submit" value="Enviar">   
+    </form>
 
 </body>
 </html>

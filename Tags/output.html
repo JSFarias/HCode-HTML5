@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>output</title>
+</head>
+<body>
+    <!--mostrado para mostrar o resultado de um calculo-->
+    <!--
+        atenção, OBS:
+        no HTML tudo que vai pra tela, tudo o que fica visível, vira texto
+        então para numeros temos sempre que converter usando parse
+    -->
+
+    <form oninput="c.value = parseInt(a.value) + parseInt(b.value)">
+        <input type="range" id="a" value="0" min="0" max="10">
+        +
+        <input type="number" id="b" value="0">
+        =
+        <output name="c" for="a b">0</output>
+
+    </form>
+
+</body>
+</html>
