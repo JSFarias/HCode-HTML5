@@ -8,7 +8,11 @@
 <body>
     <!--definir nível de progresso de uma tarefa-->
 
-    <progress max="50" value="30"></progress>
+    <form id="asd" oninput="prog.value = parseInt(ipt.value)">
+        <input id="ipt" type="range" min="0" max="100">
+    </form>
+
+    <progress name="prog" max="50" form="asd" ></progress>
 
 </body>
 </html>

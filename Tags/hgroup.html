@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hgroup</title>
+
+<style>
+    hgroup{
+        text-align: right;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-right: 16px;
+        border-right:  10px solid #f37520;
+    }
+    h1{
+        font-size: 1.93em;
+        margin-bottom: 0;
+    }
+    h2{
+        font-size: 1.16em;
+        margin-bottom: 0;
+    }
+    h3{
+        font-size: 0.93em;
+        margin-bottom: 0;
+    }
+    h4{
+        font-size: 0.83em;
+        margin-bottom: 0;
+    }
+    h5{
+        font-size: 0.73em;
+        margin-bottom: 0;
+    }
+    h6{
+        font-size: 0.63em;
+        margin-bottom: 0;
+    }
+    p{
+        text-align: justify;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: .95em;
+    }
+    p.first::first-letter{
+        font-size: 3.2em;
+        line-height: .7;
+        float: left;
+        padding-right: 8px;
+        padding-top: 4px;
+    }
+</style>
+
+</head>
+<body>
+    <!--usada para agrupar as tags h1, h2, h3, h4, h5, e h6-->
+    <!--peso semantico-->
+
+    <hgroup>
+        <h1>Solar Fighters</h1>
+        <h2>Characters</h2>
+    </hgroup>
+
+    <p class="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus hic magni est voluptatum fugit? Atque laborum fuga dignissimos autem iste soluta mollitia quia eius omnis. Ea nemo iure reiciendis quibusdam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus hic magni est voluptatum fugit? Atque laborum fuga dignissimos autem iste soluta mollitia quia eius omnis. Ea nemo iure reiciendis quibusdam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus hic magni est voluptatum fugit? Atque laborum fuga dignissimos autem iste soluta mollitia quia eius omnis. Ea nemo iure reiciendis quibusdam?</p>
+
+    <hgroup>
+        <h1>Titulo 1</h1>
+
+        <h2>Titulo 2</h2>
+        <h3>Titulo 3</h3>
+        <h4>Titulo 4</h4>
+        <h5>Titulo 5</h5>
+        <h6>Titulo 6</h6>
+
+        <h2>Title 2</h2>
+        <h3>Title 3</h3>
+        <h4>Title 4</h4>
+        <h5>Title 5</h5>
+        <h6>Title 6</h6>
+    </hgroup>
+
+</body>
+</html>

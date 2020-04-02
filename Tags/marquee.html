@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marquee</title>
+</head>
+<body>
+    <!--definir uma área de rolagem de texto-->
+
+    <!-- ↓↓↓ só no chrome ficou legal, nos outros houve queba de fps e height=200 por padrao-->
+    <marquee  direction="up">
+        Jhonatas da Silva Farias
+    </marquee>
+
+    <marquee  direction="up" height="20">
+        ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    </marquee>
+    <marquee  direction="down">
+        ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+    </marquee>
+    <marquee  direction="left">
+        ←←←←←←←←←←←←←←←←←←←←←←←←
+    </marquee>
+    <marquee  direction="right">
+        →→→→→→→→→→→→→→→→→→→→→→→→
+    </marquee>
+    <!-- ↑↑↑ só no chrome ficou legal-->
+
+    <marquee  direction="down" width="250" height="200" behavior="alternate" style="border: red 1px solid ">
+        <marquee behavior="alternate">Jhonatas da Silva Farias</marquee>
+    </marquee>
+
+    <marquee  direction="down" width="150" height="100" behavior="alternate" style="border: orange 1px solid ">
+        <marquee behavior="alternate" style="color:green"><b>•</b></marquee>
+    </marquee>
+
+</body>
+</html>
