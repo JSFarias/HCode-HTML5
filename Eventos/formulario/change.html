@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change</title>
+</head>
+<body >
+    <!--todos os eventos em HTML começam com "on"-->
+    <!--não é case sensitive, mas por convenção escreve-se todas as palavras em minúsculo-->
+    <!--dentro normalmente executa-se js-->
+
+    <!--acontece quando perde o foco sobre um elemento-->
+
+    <input type="text" onchange="debug(event)" onblur="debug(event)">
+
+    <script>
+        function debug(e){
+            console.log('Evento: ' + e.type)
+        }
+    </script>
+
+</body>
+</html>

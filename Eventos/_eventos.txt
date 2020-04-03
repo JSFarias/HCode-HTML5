@@ -1,0 +1,5 @@
+• gatilhos disparados devido alguma interação
+• a maioria são disparados por ações do usuário
+• normalmente executamos algum código js após um evento acontecer
+• temos eventos de: janela, formulário, teclado. mouse, arrasto, transferência, mídia e outros
+• nos atributos HTML todo evento deve ter o prefixo "on"

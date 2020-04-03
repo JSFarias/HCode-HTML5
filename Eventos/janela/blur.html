@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blur</title>
+</head>
+<body onblur="debug(event)">
+    <!--todos os eventos em HTML começam com "on"-->
+    <!--não é case sensitive, mas por convenção escreve-se todas as palavras em minúsculo-->
+    <!--dentro normalmente executa-se js-->
+
+    <!--acontece quando perde o foco sobre um elemento-->
+
+    <script>
+        function debug(e){
+            console.log('Evento: ' + e.type)
+            alert('Evento: ' + e.type)
+        }
+    </script>
+
+</body>
+</html>
