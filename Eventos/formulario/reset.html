@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>change</title>
+    <title>reset</title>
 </head>
 <body >
     <!--todos os eventos em HTML começam com "on"-->
     <!--não é case sensitive, mas por convenção escreve-se todas as palavras em minúsculo-->
     <!--dentro normalmente executa-se js-->
 
-    <!--util combinando com o beforeunload-->
-
-    <input type="text" onchange="debug(event)" onblur="debug(event)">
+    <form onreset="debug(event)">
+        <input type="text">
+        <button type="reset">Limpar</button>
+    </form>
 
     <script>
-        function debug(e){
+        function debug(e){            
             console.log('Evento: ' + e.type)
         }
     </script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus</title>
+</head>
+<body >
+    <!--todos os eventos em HTML começam com "on"-->
+    <!--não é case sensitive, mas por convenção escreve-se todas as palavras em minúsculo-->
+    <!--dentro normalmente executa-se js-->
+
+    <!--
+        é ainda mais interessante se, navegando pelo tab, tivermos focus em varios campos e
+        cada vez q alterna uma função diferente é executada
+    -->
+
+    <input type="text" onfocus="debug(event, 1)">
+    <input type="text" onfocus="debug(event, 2)">
+    <input type="text" onfocus="debug(event, 3)">
+
+    <script>
+        function debug(e, id){            
+            console.log('Evento: ' + e.type + id)
+        }
+    </script>
+
+</body>
+</html>

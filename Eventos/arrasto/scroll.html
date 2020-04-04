@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>change</title>
+    <title>scroll</title>
+
+<style>
+    body{
+        height: 2000px;
+    }
+</style>
+
 </head>
-<body >
+<body onscroll="debug(event, this)">
     <!--todos os eventos em HTML começam com "on"-->
     <!--não é case sensitive, mas por convenção escreve-se todas as palavras em minúsculo-->
     <!--dentro normalmente executa-se js-->
 
-    <!--util combinando com o beforeunload-->
+    <!--ondrop fica no elemento target-->
+   
 
-    <input type="text" onchange="debug(event)" onblur="debug(event)">
-
-    <script>
-        function debug(e){
-            console.log('Evento: ' + e.type)
+    <script>        
+        function debug(e, tag, log=true){            
+            if(log) {console.log('Evento: ' + e.type + ' ' + tag)}
         }
     </script>
 

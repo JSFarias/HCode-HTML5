@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>change</title>
+    <title>mousedown</title>
 </head>
 <body >
     <!--todos os eventos em HTML começam com "on"-->
     <!--não é case sensitive, mas por convenção escreve-se todas as palavras em minúsculo-->
     <!--dentro normalmente executa-se js-->
 
-    <!--util combinando com o beforeunload-->
+    <!--experimente colocar esse evento em outras tags, como a body-->
 
-    <input type="text" onchange="debug(event)" onblur="debug(event)">
+    <button type="button" onclick="debug(event, this.type)" onmousedown="debug(event, this.type)">mousedown</button>
 
     <script>
-        function debug(e){
-            console.log('Evento: ' + e.type)
+        function debug(e, tag){            
+            console.log('Evento: ' + e.type + ' ' + tag)
         }
     </script>
 

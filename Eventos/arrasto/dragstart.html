@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dragstart</title>
+
+<style>
+    #drag{
+        width: 30px;
+        height: 30px;
+        background-color: #ccc;
+    }
+    #target{
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+    }
+</style>
+
+</head>
+<body >
+    <!--todos os eventos em HTML começam com "on"-->
+    <!--não é case sensitive, mas por convenção escreve-se todas as palavras em minúsculo-->
+    <!--dentro normalmente executa-se js-->
+
+    <div id="drag" 
+    ondrag="debug(event, this, false)" 
+    ondragend="debug(event, this, false)"    
+    ondragstart="debug(event, this)"    
+    draggable="true">
+    </div>
+
+    <div id="target" 
+    ondragenter="debug(event, this)"
+    ondragleave="debug(event, this)"
+    ondragover="debug(event, this)"
+    >
+    </div>
+
+    <script>
+        function debug(e, tag, log=true){            
+            if(log) {console.log('Evento: ' + e.type + ' ' + tag)}
+        }
+    </script>
+
+</body>
+</html>

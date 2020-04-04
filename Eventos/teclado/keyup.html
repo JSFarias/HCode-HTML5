@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>change</title>
+    <title>keyup</title>
 </head>
 <body >
     <!--todos os eventos em HTML começam com "on"-->
     <!--não é case sensitive, mas por convenção escreve-se todas as palavras em minúsculo-->
     <!--dentro normalmente executa-se js-->
 
-    <!--util combinando com o beforeunload-->
+    <!--experimente colocar esse evento em outras tags, como a body-->
 
-    <input type="text" onchange="debug(event)" onblur="debug(event)">
+    <input type="text" onkeydown="debug(event)" onkeypress="debug(event)" onkeyup="debug(event)">
 
     <script>
-        function debug(e){
+        function debug(e){            
             console.log('Evento: ' + e.type)
         }
     </script>

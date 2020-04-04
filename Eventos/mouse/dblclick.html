@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dblclick</title>
+</head>
+<body onclick="debug(event, this)">
+    <!--todos os eventos em HTML começam com "on"-->
+    <!--não é case sensitive, mas por convenção escreve-se todas as palavras em minúsculo-->
+    <!--dentro normalmente executa-se js-->
+
+    <!--experimente colocar esse evento em outras tags, como a body-->
+
+    <button type="button" ondblclick="debug(event, this.type)">dblclick</button>
+
+    <script>
+        function debug(e, tag){ 
+            e.stopPropagation() //nao funcionou como previsto, mas talve pq esteja no body
+                                //ex que achei na net era em table, testar +
+            console.log('Evento: ' + e.type + ' ' + tag)
+        }
+    </script>
+
+</body>
+</html>
