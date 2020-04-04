@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cuechange</title>
+
+</head>
+<body>
+    
+    <video style="width: 360px"
+        src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4"
+        controls>
+            <track src="assets/AV1_trailer_pt.vtt" oncuechange="debug(event, this)"
+                label="Português" kind="subtitles" srclang="pt" default>
+            <track src="assets/AV1_trailer_jp.vtt" oncuechange="debug(event, this)"
+                label="Japa" kind="subtitles" srclang="jp">
+    </video>
+
+    <script>        
+        function debug(e, tag, log=true){            
+            if(log) {console.log('Evento: ' + e.type + ' ' + tag)}
+        }
+    </script>
+
+</body>
+</html>

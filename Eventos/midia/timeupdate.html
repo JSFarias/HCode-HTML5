@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timeupdate</title>
+
+</head>
+<body>
+    <!--
+        talvez seja util pra saber quando tempo total de vídeo foi assistido,
+        mesmo de maneira repetida
+    -->
+    
+    <video style="width: 830px"  
+    ontimeupdate="debug(event)"
+
+    src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4"
+        controls>
+    </video>
+
+
+    <script>   
+
+        function debug(e, tag='', log=true){            
+            if(log) {console.log('Evento: ' + e.type + ' ' + tag)}
+        }
+    </script>
+
+</body>
+</html>

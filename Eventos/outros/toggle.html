@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle</title>
+</head>
+<body>
+    <!--evento novo no HTML5 (04-04-2020), é usado somente na tag/elemento novo "details"-->
+
+    <details ontoggle="debug(event)">
+        <summary>HCode</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente possimus dolor aut illo sequi tempora corporis explicabo numquam pariatur molestiae placeat est nemo aliquid ratione, nobis accusantium quae voluptatum voluptas?</p>
+    </details>
+    
+<script>
+    function debug(e){
+        console.log("Evento: "+ e.type)
+    }
+</script>
+
+</body>
+</html>

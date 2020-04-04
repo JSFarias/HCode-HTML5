@@ -13,7 +13,12 @@
     }
     #target{
         width: 100px;
-        height: 100px;
+        height: 100px;        
+    }
+    .red{
+        background-color: red;
+    }
+    .purple{
         background-color: blueviolet;
     }
 </style>
@@ -27,8 +32,8 @@
     <!--ondrop fica no elemento target-->
 
     <div id="drag" 
-    ondrag="debug(event, this, false)" 
-    ondragend="debug(event, this, false)"    
+    ondrag="changeColorOnDrag(event, this)" 
+    ondragend="changeColorOnDragEnd(event, this)"    
     ondragstart="debug(event, this)"          
     draggable="true">
     </div>
@@ -42,6 +47,17 @@
     </div>
 
     <script>
+
+        const targetEL = document.querySelector('#target')
+
+        function changeColorOnDrag(e, tag, log=true){                    
+            if(log) {console.log('Evento: ' + e.type + ' ' + tag)}
+            targetEL.className = 'red'
+        }
+        function changeColorOnDragEnd(e, tag, log=true){                    
+            if(log) {console.log('Evento: ' + e.type + ' ' + tag)}
+            targetEL.className = 'purple'
+        }
         function cancel(e, tag, log=true){      
             e.preventDefault()      
             if(log) {console.log('Evento: ' + e.type + ' ' + tag)}

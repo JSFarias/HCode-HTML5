@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emptied</title>
+
+</head>
+<body>
+    <!--nao da pra visualizar o efeito de imediato-->
+    
+    <video style="width: 360px" onemptied="debug(event, this)"
+        src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4"
+        controls>
+    </video>
+
+    <script>        
+        function debug(e, tag, log=true){            
+            if(log) {console.log('Evento: ' + e.type + ' ' + tag)}
+        }
+    </script>
+
+</body>
+</html>

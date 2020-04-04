@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loadedmetadata</title>
+
+</head>
+<body>
+    
+    <video style="width: 360px"     
+    onloadedmetadata="debug(event, this)"
+    onloadeddata="debug(event, this)"
+    oncanplay="debug(event, this)"
+    ondurationchange="debug(event, this)"
+        src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4"
+        controls>
+    </video>
+
+    <script>        
+        function debug(e, tag, log=true){            
+            if(log) {console.log('Evento: ' + e.type + ' ' + tag)}
+        }
+    </script>
+
+</body>
+</html>

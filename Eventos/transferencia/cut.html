@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cut</title>
+</head>
+<body oncut="debug(event, this)">
+
+    <p contenteditable="true">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptas deserunt excepturi tempora reiciendis eveniet quisquam, dolorem nisi fuga at eius odio a? Iusto nemo excepturi, aliquid mollitia provident quidem!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptas deserunt excepturi tempora reiciendis eveniet quisquam, dolorem nisi fuga at eius odio a? Iusto nemo excepturi, aliquid mollitia provident quidem!</p>
+    
+    <script>        
+        function debug(e, tag, log=true){            
+            if(log) {console.log('Evento: ' + e.type + ' ' + tag)}
+        }
+    </script>
+
+</body>
+</html>
